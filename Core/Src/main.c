@@ -89,6 +89,7 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   MX_TIM10_Init();
+  MX_TIM6_Init();
   /* USER CODE BEGIN 2 */
 
   startup();

@@ -7,7 +7,7 @@
 
 void startup()
 {
-
+	BMI088Init();
 	while (1)
 	{
 
