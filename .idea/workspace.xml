@@ -23,17 +23,23 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="554edf37-4fd5-4fbf-b187-815d4aac6dc6" name="更改" comment="使用连续读取">
+    <list default="true" id="554edf37-4fd5-4fbf-b187-815d4aac6dc6" name="更改" comment="增加定时器，增加加热TIM10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f4xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f4xx_it.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/tim.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/startup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/startup.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f4xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f4xx_it.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/tim.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU.uvguix.Sunny" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU.uvguix.Sunny" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU.uvoptx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU.uvprojx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU.uvprojx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STM32ReadIMU.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/STM32ReadIMU.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/STM32ReadIMU.axf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/STM32ReadIMU.axf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/STM32ReadIMU.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/STM32ReadIMU.build_log.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/STM32ReadIMU.hex" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/STM32ReadIMU.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/STM32ReadIMU.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/STM32ReadIMU.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/STM32ReadIMU.map" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/STM32ReadIMU.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/STM32ReadIMU_STM32ReadIMU.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/STM32ReadIMU_STM32ReadIMU.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/startup.d" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/startup.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/startup.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/startup.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/stm32f4xx_it.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/stm32f4xx_it.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/tim.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU/tim.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730526893850</updated>
-      <workItem from="1730526895263" duration="6062000" />
+      <workItem from="1730526895263" duration="6891000" />
     </task>
     <task id="LOCAL-00001" summary="Premiere">
       <option name="closed" value="true" />
@@ -131,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730532410161</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="增加定时器，增加加热TIM10">
+      <option name="closed" value="true" />
+      <created>1730533059602</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730533059602</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +159,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Premiere" />
     <MESSAGE value="使用连续读取" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用连续读取" />
+    <MESSAGE value="增加定时器，增加加热TIM10" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加定时器，增加加热TIM10" />
   </component>
 </project>
