@@ -17,6 +17,11 @@ void BMI088ReceiveByte(uint8_t* rxData)
 	HAL_SPI_Receive(&hspi1, rxData, 1, HAL_MAX_DELAY);
 }
 
+void BMI088ReceiveMultipleBytes(uint8_t* rxData, uint8_t length)
+{
+	HAL_SPI_Receive(&hspi1, rxData, length, HAL_MAX_DELAY);
+}
+
 void BMI088WriteSingleByte(GPIO_TypeDef* ssPort, uint8_t ssPin, uint8_t reg, uint8_t txData)
 {
 	HAL_GPIO_WritePin(ssPort, ssPin, GPIO_PIN_RESET);
@@ -37,10 +42,11 @@ void BMI088ReadMultipleByte(GPIO_TypeDef* ssPort, uint8_t ssPin, uint8_t reg, ui
 {
 	HAL_GPIO_WritePin(ssPort, ssPin, GPIO_PIN_RESET);
 	BMI088TransmitByte(reg | 0x80);
-	for (uint8_t i = 0; i < length; i++)
-	{
-		BMI088ReceiveByte( rxData + i );
-	}
+	BMI088ReceiveMultipleBytes(rxData, length);
+	// for (uint8_t i = 0; i < length; i++)
+	// {
+	// 	BMI088ReceiveByte( rxData + i );
+	// }
 	HAL_GPIO_WritePin(ssPort, ssPin, GPIO_PIN_SET);
 }
 

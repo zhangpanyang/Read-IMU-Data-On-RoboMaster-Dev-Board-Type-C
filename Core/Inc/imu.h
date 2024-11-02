@@ -11,6 +11,8 @@ void BMI088TransmitByte(uint8_t txData);
 
 void BMI088ReceiveByte(uint8_t* rxData);
 
+void BMI088ReceiveMultipleBytes(uint8_t* rxData, uint8_t length);
+
 void BMI088WriteSingleByte(GPIO_TypeDef* ssPort, uint8_t ssPin, uint8_t reg, uint8_t txData);
 
 void BMI088ReadSingleByte(GPIO_TypeDef* ssPort, uint8_t ssPin, uint8_t reg, uint8_t &rxData);
