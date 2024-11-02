@@ -23,9 +23,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="554edf37-4fd5-4fbf-b187-815d4aac6dc6" name="更改" comment="一通调试发现：初始电平没置高；解码时高位和低位写反了">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/imu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/imu.cpp" afterDir="false" />
+    <list default="true" id="554edf37-4fd5-4fbf-b187-815d4aac6dc6" name="更改" comment="改换单位">
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU.uvguix.Sunny" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32ReadIMU.uvguix.Sunny" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730526893850</updated>
-      <workItem from="1730526895263" duration="8169000" />
+      <workItem from="1730526895263" duration="8553000" />
     </task>
     <task id="LOCAL-00001" summary="Premiere">
       <option name="closed" value="true" />
@@ -147,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730535086319</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="改换单位">
+      <option name="closed" value="true" />
+      <created>1730535143296</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730535143296</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +171,7 @@
     <MESSAGE value="增加定时器，增加加热TIM10" />
     <MESSAGE value="使用定时器，修改加热占空比" />
     <MESSAGE value="一通调试发现：初始电平没置高；解码时高位和低位写反了" />
-    <option name="LAST_COMMIT_MESSAGE" value="一通调试发现：初始电平没置高；解码时高位和低位写反了" />
+    <MESSAGE value="改换单位" />
+    <option name="LAST_COMMIT_MESSAGE" value="改换单位" />
   </component>
 </project>
