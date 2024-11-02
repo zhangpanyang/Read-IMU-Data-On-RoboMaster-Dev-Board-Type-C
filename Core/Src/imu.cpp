@@ -64,9 +64,9 @@ void BMI088ReadAccel()
 	int16_t accelXInt16 = (int16_t)(accData[1] << 8 | accData[0]);
 	int16_t accelYInt16 = (int16_t)(accData[3] << 8 | accData[2]);
 	int16_t accelZInt16 = (int16_t)(accData[5] << 8 | accData[4]);
-	imuAccel.accelX = linearMapping(accelXInt16, -32767, 32767, -6, 6);
-	imuAccel.accelY = linearMapping(accelYInt16, -32767, 32767, -6, 6);
-	imuAccel.accelZ = linearMapping(accelZInt16, -32767, 32767, -6, 6);
+	imuAccel.accelX = linearMapping(accelXInt16, -32767, 32767, -12, 12);
+	imuAccel.accelY = linearMapping(accelYInt16, -32767, 32767, -12, 12);
+	imuAccel.accelZ = linearMapping(accelZInt16, -32767, 32767, -12, 12);
 }
 
 imuGyroTypedef imuGyro;
@@ -83,11 +83,9 @@ void BMI088ReadGyro()
 	imuGyro.rateZ = linearMapping(rateZInt16, -32767, 32767, -2000, 2000);
 }
 
-uint8_t accRange;
 uint8_t chipID;
 void BMI088Init()
 {
 	BMI088ReadMultipleByte(CS1_ACCEL_GPIO_Port, CS1_ACCEL_Pin, 0x00, &chipID, 1);
-	BMI088WriteSingleByte(CS1_ACCEL_GPIO_Port, CS1_ACCEL_Pin, ACC_RANGE_REG, ACC_RANGE_6G);
-	BMI088ReadSingleByte(CS1_ACCEL_GPIO_Port, CS1_ACCEL_Pin, ACC_RANGE_REG, &accRange);
+	BMI088WriteSingleByte(CS1_ACCEL_GPIO_Port, CS1_ACCEL_Pin, ACC_RANGE_REG, ACC_RANGE_12G);
 }
